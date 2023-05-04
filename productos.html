@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -42,20 +43,186 @@
     <br>
     <br>
     <br>
+    <h1 style="text-align: center; font-weight: bold;">Drones</h1>
     <div class="carousel-container">
-		<div class="carousel-slide">
-		  <img src="/imagenes/580b57fbd9996e24bc43bfb5.png">
-		  <img src="/imagenes/aaa-removebg-preview.png">
-		  <img src="img/image3.jpg">
-		  <img src="img/image4.jpg">
-		</div>
-		<div class="carousel-nav">
-		  <button class="carousel-prev">Prev</button>
-		  <button class="carousel-next">Next</button>
-		</div>
-	  </div>
+        <div class="carousel-slide">
+            <div class="carousel-item">
+                <img src="/imagenes/aaa-removebg-preview.png">
+                <div class="carousel-item-desc">Descripción de la imagen 1</div>
+            </div>
+            <div class="carousel-item">
+                <img src="/imagenes/bbbb-removebg-preview.png">
+                <div class="carousel-item-desc">Descripción de la imagen 2</div>
+            </div>
+            <div class="carousel-item">
+                <img src="/imagenes/bbbb-removebg-preview.png">
+                <div class="carousel-item-desc">Descripción de la imagen 3</div>
+            </div>
+            <div class="carousel-item">
+                <img src="/imagenes/aaa-removebg-preview.png">
+                <div class="carousel-item-desc">Descripción de la imagen 4</div>
+            </div>
+            <div class="carousel-item">
+                <img src="/imagenes/bbbb-removebg-preview.png">
+                <div class="carousel-item-desc">Descripción de la imagen 5</div>
+            </div>
+            <div class="carousel-item">
+                <img src="/imagenes/aaa-removebg-preview.png">
+                <div class="carousel-item-desc">Descripción de la imagen 6</div>
+            </div>
+        </div>
+        <br>
+        <div class="carousel-nav">
+            <button class="carousel-prev">Anterior</button>
+            <button class="carousel-next">Siguiente</button>
+        </div>
+    </div>
+    
+    <br>
+    <br>
+    <br>
 
-     
+    <h1 style="text-align: center; font-weight: bold;">Aviones</h1>
+<div class="carousel-container2">
+    <div class="carousel-slide2">
+        <div class="carousel-item2">
+            <img src="/imagenes/aaa-removebg-preview.png">
+            <div class="carousel-item-desc2">Descripción de la imagen 1</div>
+        </div>
+        <div class="carousel-item2">
+            <img src="/imagenes/bbbb-removebg-preview.png">
+            <div class="carousel-item-desc2">Descripción de la imagen 2</div>
+        </div>
+        <div class="carousel-item2">
+            <img src="/imagenes/bbbb-removebg-preview.png">
+            <div class="carousel-item-desc2">Descripción de la imagen 3</div>
+        </div>
+        <div class="carousel-item2">
+            <img src="/imagenes/aaa-removebg-preview.png">
+            <div class="carousel-item-desc2">Descripción de la imagen 4</div>
+        </div>
+        <div class="carousel-item2">
+            <img src="/imagenes/bbbb-removebg-preview.png">
+            <div class="carousel-item-desc2">Descripción de la imagen 5</div>
+        </div>
+        <div class="carousel-item2">
+            <img src="/imagenes/aaa-removebg-preview.png">
+            <div class="carousel-item-desc2">Descripción de la imagen 6</div>
+        </div>
+    </div>
+    <br>
+    <div class="carousel-nav2">
+        <button class="carousel-prev2">Anterior</button>
+        <button class="carousel-next2">Siguiente</button>
+    </div>
+</div>
+
+
+<!--carrousel 1 script-->
+
+<script>
+    $(document).ready(function(){
+        // Setea variables para el primer carrousel
+        var carouselSlide = $('.carousel-slide');
+        var carouselItems = $('.carousel-slide .carousel-item');
+        var carouselNav = $('.carousel-nav');
+        var carouselNext = $('.carousel-next');
+        var carouselPrev = $('.carousel-prev');
+        var currentIndex = 0;
+        var itemWidth = carouselItems.eq(0).outerWidth(true);
+
+        // Añadir un receptor de clics al botón siguiente
+        carouselNext.click(function(){
+            // Incrementa el índice actual y actualiza la posición de la diapositiva del carrusel
+            currentIndex++;
+            carouselSlide.css('transform', 'translateX(' + (-itemWidth * currentIndex) + 'px)');
+            // Desactivar/activar botones en función del índice actual
+            toggleButtons();
+        });
+
+        //  Añadir un receptor de clics al botón anterior
+        carouselPrev.click(function(){
+            // Disminuye el índice actual y actualiza la posición de la diapositiva del carrusel
+            currentIndex--;
+            carouselSlide.css('transform', 'translateX(' + (-itemWidth * currentIndex) + 'px)');
+            // Desactivar/activar botones en función del índice actual
+            toggleButtons();
+        });
+
+        // Desactivar/activar botones en función del índice actual
+        function toggleButtons(){
+            if(currentIndex <= 0){
+                carouselPrev.prop('disabled', true);
+                carouselNext.prop('disabled', false);
+            } else if(currentIndex >= carouselItems.length - 1){
+                carouselPrev.prop('disabled', false);
+                carouselNext.prop('disabled', true);
+            } else {
+                carouselPrev.prop('disabled', false);
+                carouselNext.prop('disabled', false);
+            }
+        }
+
+        // Desactivar el botón anterior al cargar la página
+        carouselPrev.prop('disabled', true);
+    });
+</script>
+
+
+
+
+<!--carrousel 2 script-->
+
+<script>
+    $(document).ready(function(){
+        // Setea variables para el segundo carrousel
+        var carouselSlide = $('.carousel-slide2');
+        var carouselItems = $('.carousel-slide2 .carousel-item2');
+        var carouselNav = $('.carousel-nav2');
+        var carouselNext = $('.carousel-next2');
+        var carouselPrev = $('.carousel-prev2');
+        var currentIndex = 0;
+        var itemWidth = carouselItems.eq(0).outerWidth(true);
+
+        // Añadir un receptor de clics al botón siguiente
+        carouselNext.click(function(){
+            // Incrementa el índice actual y actualiza la posición de la diapositiva del carrusel
+            currentIndex++;
+            carouselSlide.css('transform', 'translateX(' + (-itemWidth * currentIndex) + 'px)');
+            // Desactivar/activar botones en función del índice actual
+            toggleButtons();
+        });
+
+        //  Añadir un receptor de clics al botón anterior
+        carouselPrev.click(function(){
+            // Disminuye el índice actual y actualiza la posición de la diapositiva del carrusel
+            currentIndex--;
+            carouselSlide.css('transform', 'translateX(' + (-itemWidth * currentIndex) + 'px)');
+            // Desactivar/activar botones en función del índice actual
+            toggleButtons();
+        });
+
+        // Desactivar/activar botones en función del índice actual
+        function toggleButtons(){
+            if(currentIndex <= 0){
+                carouselPrev.prop('disabled', true);
+                carouselNext.prop('disabled', false);
+            } else if(currentIndex >= carouselItems.length - 1){
+                carouselPrev.prop('disabled', false);
+                carouselNext.prop('disabled', true);
+            } else {
+                carouselPrev.prop('disabled', false);
+                carouselNext.prop('disabled', false);
+            }
+        }
+
+        // Desactivar el botón anterior al cargar la página
+        carouselPrev.prop('disabled', true);
+    });
+</script>
+
+
+
       <script src="script.js"></script>	  
 </body>
 </html>
