@@ -430,12 +430,16 @@ footer {
 #productos-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;  
+  
 }
 
 .producto {
   margin: 0 10px 20px;
   text-align: center;
+  background-color:#cbc1a8cc;
+  border: #000000;
+  border-radius: 200px;
+  border-style: double;
 }
 
 .producto img {
