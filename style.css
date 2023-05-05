@@ -634,6 +634,14 @@ button[type="submit"]:hover {
   z-index: -1;
 }
 
+/*fondo del div de la parte del index de los servicios*/
+.divisol {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/c/ca/Autumn_Drone_%28cropped%29.jpg");
+  display: block;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .registration-container h2 {
   text-align: center;
   margin-bottom: 20px;
