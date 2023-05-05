@@ -427,6 +427,63 @@ footer {
   cursor: default;
 }
 
+#productos-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;  
+}
+
+.producto {
+  margin: 0 10px 20px;
+  text-align: center;
+}
+
+.producto img {
+  max-width: 90%;
+  height: auto;
+}
+
+.producto h3 {
+  margin-top: 0;
+}
+
+.precio {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+
+.botoncito{
+  display: inline-block;
+  background-color: #6fcf97;
+  color: #000000;
+  border: none;
+  padding: 10px 70px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: all 0.2s ease-in-out;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.botoncito:hover {
+  background-color: #1abc9c;
+}
+
+#productos-container .producto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.botoncito {
+  margin-top: 1rem; /* Agrega un poco de espacio encima del botón */
+  margin-bottom: 1rem; /*Agrega un poco de espacio debajo del boton */
+}
+
+
 
 
 
