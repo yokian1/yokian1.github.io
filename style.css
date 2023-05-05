@@ -427,28 +427,31 @@ footer {
   cursor: default;
 }
 
-#productos-container {
+#productos-container ul {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   
 }
 
 .producto {
-  margin: 0 10px 20px;
+  flex: 1 0 30%;
+  margin: 10px;
   text-align: center;
   background-color:#cbc1a8cc;
   border: #000000;
-  border-radius: 200px;
+  border-radius: 0px;
   border-style: double;
+  display: inline-block;
 }
 
 .producto img {
-  max-width: 90%;
-  height: auto;
+  max-width: 80%;
+  height: 50%;
 }
 
 .producto h3 {
-  margin-top: 0;
+  margin-top: 50px;
 }
 
 .precio {
