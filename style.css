@@ -176,6 +176,7 @@ nav ul li a:hover {
     padding: 20px;
     width: calc(33.33% - 20px);
   }
+
   
   .service img {
     display: block;
@@ -495,9 +496,190 @@ footer {
 
 
 
+/*Css del login*/
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #cbc1a8cc;
+}
+
+.login-container {
+  max-width: 500px;
+  margin:100px auto;
+  padding: 20px;
+  background-color: #cbc1a8cc;
+  border-radius: 100px;
+  border: 1px solid black;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.h22 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-control {
+  margin-bottom: 15px;
+}
+
+label {
+  display: flex;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #000000;
+}
+
+input[type="email"],
+input[type="password"] {
+  padding: 10px;
+  border-radius: 50px;
+  border: 1px solid #000000;
+  font-size: 35px;
+}
+
+button[type="submit"] {
+  padding: 10px;
+  background-color: #6fcf97;
+  color: #000000;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: bolder;
+}
+
+button[type="submit"]:hover {
+  background-color: #1abc9c;
+}
+
+.forgot-password,
+.register-link {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.forgot-password a,
+.register-link a {
+  color: #008CBA;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.forgot-password a:hover,
+.register-link a:hover {
+  text-decoration: underline;
+}
+
+.social-login i:hover{
+
+  color: #000000;
+}
+
+.social-login {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.social-login a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 40px;
+  margin: 0 10px;
+  background-color: #cbc1a8cc;
+  border-radius: 50%;
+  color: rgb(37, 118, 168);
+}
 
 
 
+/*css del registro de usuario*/
+
+.registration-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 50px;
+  border: 1px solid #000000;
+  border-radius: 100px;
+  background-color: #cbc1a8cc;
+  
+}
+
+
+/*Fondo de la pagina entera opaco*/
+.registration-container::before {
+  content: "";
+  display: block;
+  position:fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/c/ca/Autumn_Drone_%28cropped%29.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.registration-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.form-column {
+  flex-basis: calc(50% - 10px);
+}
+
+.form-column label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-column input {
+  display: block;
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #000000;
+  border-radius: 50px;
+  font-size: 22px;
+}
+
+button[type="submit"] {
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: #6fcf97;
+  color: #000000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #1abc9c;
+}
 
 
 

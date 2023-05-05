@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+		<div class="logo">
+			<img src="data:image/png;base64,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" alt="SkyTech">
+		</div>
+		<nav>
+			<ul>
+				<li><a href="index.html">Inicio</a></li>
+				<li><a href="#produc1">Productos</a></li>
+				<li><a href="#servic1">Servicios</a></li>
+				<li><a href="#contact1">Contacto</a></li>
+				<li><a href="/login.html">Iniciar Sesión</a></li>
+			</ul>
+		</nav>
+	</header>
+    <div class="login-container">
+        <h2 class="h22">Iniciar sesión</h2>
+        <form>
+          <div class="form-control">
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-control">
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required>
+          </div>
+          <div class="remember-me">
+            <input type="checkbox" id="remember-me" name="remember-me">
+            <label for="remember-me">Recordar contraseña</label>
+          </div>
+          <button type="submit">Ingresar</button>
+        </form>
+        <div class="forgot-password">
+          <a href="#">¿Olvidaste tu contraseña?</a>
+        </div>
+        <div class="social-login">
+          <p style="font-weight: bold;">O ingresa con:</p>
+          <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="google"><i class="fab fa-google"></i></a>
+        </div>
+        <div class="register-link">
+          <p style="font-weight: bold;">¿Aún no tienes cuenta?</p>
+          <a href="#registr">Registrarse</a>
+          <img src="/imagenes/5cb84c5f7ff3656569c8cec5.png" alt="dron">
+        </div>
+      </div>
+     <hr size="10" color="black" width="100%">
+      <br>
+      <br>
+      <br>
+
+      <div class="registration-container">
+        <h2 id="registr">Regístrate</h2>
+        <form>
+          <div class="form-row">
+            <div class="form-column">
+              <label for="first-name">Nombre:</label>
+              <input type="text" id="first-name" name="first-name" required>
+            </div>
+            <div class="form-column">
+              <label for="last-name">Apellido:</label>
+              <input type="text" id="last-name" name="last-name" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-column">
+              <label for="email">Correo electrónico:</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-column">
+              <label for="password">Contraseña:</label>
+              <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-column">
+                <label for="password">Repetir contraseña:</label>
+                <input type="password" id="password" name="password" required>
+              </div>
+          </div>
+          <div class="form-row">
+            <div class="form-column">
+              <label for="phone">Teléfono:</label>
+              <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+            </div>
+            <div class="form-column">
+              <label for="birthdate">Fecha de nacimiento:</label>
+              <input type="date" id="birthdate" name="birthdate" required>
+            </div>
+          </div>
+          <button type="submit">Registrarse</button>
+        </form>
+      </div>
+      <br>
+      <br>
+</body>
+</html>
