@@ -116,7 +116,7 @@ nav ul li a:hover {
 }
 
 .card:hover {
-  box-shadow: 0 5px 10px #c8612d;
+  box-shadow: 0 5px 10px #00000033;
 }
 
 .card img {
@@ -273,10 +273,11 @@ footer {
     
 
 /*carrousel 1*/
-.carousel-container {
+  
+  .carousel-container {
   position: relative;
   width: 100%;
-  height: auto; /* Ajustamos la altura automáticamente */
+  height: 280px;
   overflow: hidden;
   text-align: center;
 }
@@ -284,21 +285,21 @@ footer {
 .carousel-slide {
   display: flex;
   width: 200%;
-  height: auto; /* Ajustamos la altura automáticamente */
+  height: 100%;
   transition: transform 0.4s ease-in-out;
 }
 
 .carousel-item {
-  position: relative;
-  width: 50%; /* Cambiamos el ancho a 50% para mostrar 2 elementos por fila en dispositivos móviles */
-  height: auto; /* Ajustamos la altura automáticamente */
+  position:relative;
+  width: 25%;
+  height: 100%;
   padding: 0 10px;
-  box-sizing: border-box;
+  box-sizing:border-box;
 }
 
 .carousel-item img {
   width: 100%;
-  height: auto; /* Ajustamos la altura automáticamente */
+  height: 100%;
   object-fit: cover;
 }
 
@@ -328,6 +329,7 @@ footer {
   transform: translateX(-50%);
 }
 
+
 .carousel-prev,
 .carousel-next {
   padding: 10px 20px;
@@ -350,12 +352,13 @@ footer {
   cursor: default;
 }
 
-/* Carousel 2 */
+
+/*carrousel 2*/
 
 .carousel-container2 {
   position: relative;
   width: 100%;
-  height: auto; /* Ajustar la altura automáticamente */
+  height: 280px;
   overflow: hidden;
   text-align: center;
 }
@@ -363,21 +366,21 @@ footer {
 .carousel-slide2 {
   display: flex;
   width: 200%;
-  height: auto; /* Ajustar la altura automáticamente */
+  height: 100%;
   transition: transform 0.4s ease-in-out;
 }
 
 .carousel-item2 {
-  position: relative;
-  width: 50%; /* Cambiar el ancho al 50% para mostrar 2 elementos por fila en dispositivos móviles */
-  height: auto; /* Ajustar la altura automáticamente */
+  position:relative;
+  width: 25%;
+  height: 100%;
   padding: 0 10px;
-  box-sizing: border-box;
+  box-sizing:border-box;
 }
 
 .carousel-item2 img {
   width: 100%;
-  height: auto; /* Ajustar la altura automáticamente */
+  height: 100%;
   object-fit: cover;
 }
 
@@ -406,6 +409,7 @@ footer {
   left: 50%;
   transform: translateX(-50%);
 }
+
 
 .carousel-prev2,
 .carousel-next2 {
