@@ -111,12 +111,12 @@ nav ul li a:hover {
   padding: 20px;
   margin-bottom: 30px;
   text-align: center;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px #0000001a;
   transition: all 0.2s ease-in-out;
 }
 
 .card:hover {
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 10px #c8612d;
 }
 
 .card img {
@@ -273,11 +273,10 @@ footer {
     
 
 /*carrousel 1*/
-  
-  .carousel-container {
+.carousel-container {
   position: relative;
   width: 100%;
-  height: 280px;
+  height: auto; /* Ajustamos la altura automáticamente */
   overflow: hidden;
   text-align: center;
 }
@@ -285,21 +284,21 @@ footer {
 .carousel-slide {
   display: flex;
   width: 200%;
-  height: 100%;
+  height: auto; /* Ajustamos la altura automáticamente */
   transition: transform 0.4s ease-in-out;
 }
 
 .carousel-item {
-  position:relative;
-  width: 25%;
-  height: 100%;
+  position: relative;
+  width: 50%; /* Cambiamos el ancho a 50% para mostrar 2 elementos por fila en dispositivos móviles */
+  height: auto; /* Ajustamos la altura automáticamente */
   padding: 0 10px;
-  box-sizing:border-box;
+  box-sizing: border-box;
 }
 
 .carousel-item img {
   width: 100%;
-  height: 100%;
+  height: auto; /* Ajustamos la altura automáticamente */
   object-fit: cover;
 }
 
@@ -329,7 +328,6 @@ footer {
   transform: translateX(-50%);
 }
 
-
 .carousel-prev,
 .carousel-next {
   padding: 10px 20px;
@@ -352,13 +350,12 @@ footer {
   cursor: default;
 }
 
-
-/*carrousel 2*/
+/* Carousel 2 */
 
 .carousel-container2 {
   position: relative;
   width: 100%;
-  height: 280px;
+  height: auto; /* Ajustar la altura automáticamente */
   overflow: hidden;
   text-align: center;
 }
@@ -366,21 +363,21 @@ footer {
 .carousel-slide2 {
   display: flex;
   width: 200%;
-  height: 100%;
+  height: auto; /* Ajustar la altura automáticamente */
   transition: transform 0.4s ease-in-out;
 }
 
 .carousel-item2 {
-  position:relative;
-  width: 25%;
-  height: 100%;
+  position: relative;
+  width: 50%; /* Cambiar el ancho al 50% para mostrar 2 elementos por fila en dispositivos móviles */
+  height: auto; /* Ajustar la altura automáticamente */
   padding: 0 10px;
-  box-sizing:border-box;
+  box-sizing: border-box;
 }
 
 .carousel-item2 img {
   width: 100%;
-  height: 100%;
+  height: auto; /* Ajustar la altura automáticamente */
   object-fit: cover;
 }
 
@@ -409,7 +406,6 @@ footer {
   left: 50%;
   transform: translateX(-50%);
 }
-
 
 .carousel-prev2,
 .carousel-next2 {
