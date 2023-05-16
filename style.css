@@ -1,196 +1,199 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 20px;
-    line-height: 1.5;
-    display: flex;
-    flex-direction: column;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
 }
 
 header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #000000;
-    padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #000000;
+  padding: 10px;
 }
 
 .logo img {
-    height: 80px;
+  height: 60px;
 }
 
 nav ul {
-    display: flex;
-    list-style: none;
+  display: flex;
+  list-style: none;
 }
 
 nav ul li {
-    margin-left: 40px;
+  margin-left: 20px;
 }
 
 nav ul li:first-child {
-    margin-left: 0;
+  margin-left: 0;
 }
 
 nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    transition: all 0.2s ease-in-out;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
 }
 
 nav ul li a:hover {
-    color: #ba5c2e;
+  color: #ba5c2e;
 }
 
 .introduccion {
-    background-image: url("https://upload.wikimedia.org/wikipedia/commons/c/ca/Autumn_Drone_%28cropped%29.jpg");
-    background-size: cover;
-    background-position: center center;
-    color: #000000;
-    text-align: center;
-    padding: 100px 0;
-    font-weight: bold;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/c/ca/Autumn_Drone_%28cropped%29.jpg");
+  background-size: cover;
+  background-position: center center;
+  color: #000000;
+  text-align: center;
+  padding: 60px 0;
+  font-weight: bold;
 }
 
 .fondo-transparente {
-    background-color: #ba5c2e;
-    opacity: 0.8; 
+  background-color: #ba5c2e;
+  opacity: 0.8;
 }
 
 .introduccion h1 {
-    font-size: 3.5rem;
-    margin-bottom: 20px;
+  font-size: 2rem;
+  margin-bottom: 20px;
 }
 
 .introduccion p {
-    font-size: 1.3rem;
-    margin-bottom: 40px;
+  font-size: 1rem;
+  margin-bottom: 40px;
 }
 
 .boton-primario {
-    display: inline-block;
-    background-color: #ba5c2e;
-    color: #000000;
-    border: none;
-    padding: 10px 30px;
-    font-size: 1.2rem;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: all 0.2s ease-in-out;
-    font-weight: bold;
+  display: inline-block;
+  background-color: #ba5c2e;
+  color: #000000;
+  border: none;
+  padding: 8px 20px;
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: all 0.2s ease-in-out;
+  font-weight: bold;
 }
 
 .boton-primario:hover {
-    background-color: #c8612d;
+  background-color: #c8612d;
 }
 
 .productos {
-    padding: 100px 0;
+  padding: 60px 0;
 }
 
 .productos h2 {
-    font-size: 3rem;
-    margin-bottom: 40px;
-    text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  text-align: center;
 }
 
 .productos p {
-    font-size: 1.8rem;
-    margin-bottom: 40px;
-    text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  text-align: center;
 }
 
 .card {
-    border: 1px solid #000000;
-    border-radius: 5px;
-    padding: 20px;
-    margin-bottom: 40px;
-    text-align: center;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    transition: all 0.2s ease-in-out;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 30px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease-in-out;
 }
 
 .card:hover {
-    box-shadow: 0 10px 20px #ba5c2e;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 .card img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 20px;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 15px;
 }
 
 .card h3 {
-    font-size: 2rem;
-    margin-bottom: 20px;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
 }
 
 .card p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
+  font-size: 1.1rem;
+  line-height: 1.5;
 }
 
 .boton-secundario {
-    display: inline-block;
-    background-color: #ba5c2e;
-    color: #000000;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1.2rem;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: all 0.2s ease-in-out;
-    font-weight: bold;
-}
-
-.boton-secundario:hover {
-    background-color: #c8612d;
-}
-
-.servicios {
-    background-color: rgb(0, 0, 0);
-    color: white;
-    text-align: center;
-    font-size: 20px;
-}
-
-.services {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 50px auto;
-    max-width: 1000px;
+  display: inline-block;
+  background-color: #ba5c2e;
+  color: #000000;
+  border: none;
+  padding: 8px 16px;
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: all 0.2s ease-in-out;
+  font-weight: bold;
+  }
+  
+  .boton-secundario:hover {
+  background-color: #c8612d;
+  }
+  
+  .servicios {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  }
+  
+  .services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 30px auto;
+  max-width: 1000px;
   }
   
   .service {
-    background-color: #f7f7f7;
-    border-radius: 5px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-    margin-bottom: 30px;
-    padding: 20px;
-    width: calc(33.33% - 20px);
+  background-color: #f7f7f7;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  padding: 10px;
+  width: calc(50% - 10px);
   }
-
+  
+  .service:nth-child(odd) {
+  margin-right: 10px;
+  }
   
   .service img {
-    display: block;
-    margin-bottom: 15px;
-    max-width: 100%;
+  display: block;
+  margin-bottom: 10px;
+  max-width: 100%;
   }
   
   .service h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
   }
   
   .service p {
-    font-size: 1.1rem;
-    line-height: 1.5;
+  font-size: 1rem;
+  line-height: 1.5;
   }
 
 /* Estilos del footer */
