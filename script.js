@@ -58,5 +58,15 @@ carouselSlide.addEventListener("transitionend", () => {
   }
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+  var toggles = document.getElementsByClassName('collapsible-toggle');
+  
+  for (var i = 0; i < toggles.length; i++) {
+    toggles[i].addEventListener('click', function() {
+      var collapsible = this.parentNode.parentNode;
+      collapsible.classList.toggle('active');
+    });
+  }
+});
 
 

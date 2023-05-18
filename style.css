@@ -65,7 +65,7 @@ nav ul li a:hover {
 }
 
 .fondo-transparente {
-  background-color: #ba5c2e;
+  background-color: #ba5c2ecc;
   opacity: 0.8;
 }
 
@@ -646,6 +646,21 @@ button[type="submit"]:hover {
   z-index: -1;
 }
 
+.fondito::before{
+  content: "";
+  display: block;
+  position:fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/c/ca/Autumn_Drone_%28cropped%29.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+  z-index: -1;
+}
+
 /*fondo del div de la parte del index de los servicios*/
 .divisol {
   background-image: url("https://upload.wikimedia.org/wikipedia/commons/c/ca/Autumn_Drone_%28cropped%29.jpg");
@@ -705,5 +720,117 @@ button[type="submit"]:hover {
 
 
 
-  
-  
+
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.course-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+.course-card {
+  width: 300px;
+  margin: 20px;
+  padding: 20px;
+  background-color: #f1f1f1;
+  box-shadow: 0 2px 5px #ba5c2e;
+  transition: transform 0.3s ease;
+}
+
+.course-card:hover {
+  transform: translateY(-5px);
+  color: #ba5c2e;
+}
+
+.course-card img {
+  width: 100%;
+  height: auto;
+}
+
+.course-card h2 {
+  margin-top: 10px;
+  font-size: 24px;
+}
+
+.course-card p {
+  margin-top: 10px;
+}
+
+.course-link {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #000000;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.course-link:hover {
+  background-color: #c8612d;
+}
+
+.h1sito{
+  text-align: center;
+  background-color: black;
+}
+
+.divsito{
+  text-align: center;
+}
+
+
+/*parte descriptiva de los cursos*/
+
+.collapsible {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #ffffffcc;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.collapsible-header {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+  background-color: #ba5c2e;
+}
+
+.collapsible-header h3 {
+  flex-grow: 1;
+  margin: 0;
+}
+
+.collapsible-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.collapsible input[type="checkbox"] {
+  display: none;
+}
+
+.collapsible input[type="checkbox"]:checked ~ .collapsible-content {
+  max-height: 1000px; /* Adjust this value to suit your needs */
+}
+
+/*centrar boton del curso*/
+.centered-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 10vh; /* Adjust this value to center vertically in the viewport */
+  text-align: center;
+  }
