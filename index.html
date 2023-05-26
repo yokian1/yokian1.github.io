@@ -42,37 +42,12 @@
 		</div>
 			<a href="/productos.html" class="boton-primario">Ver Productos</a>
 		</div>
-	</section>
-	  
-	
-	<section class="productos">
-		<div class="container">
-			<h2 id="produc1">Productos</h2>
-			<p>En eansa ofrecemos una amplia variedad de drones para diversas aplicaciones, incluyendo:</p>
-			<div class="card">
-				<img src="/imagenes/580b57fbd9996e24bc43bfb5.png" alt="Drone 1" style="width: 500px; height: 350px;">
-				<h3>Drone 1</h3>
-				<p>Descripción breve del producto y sus características.</p>
-				<a href="/productos.html" class="boton-secundario">Ver más</a>
-			</div>
-			<div class="card">
-				<img src="/imagenes/5cb84c5f7ff3656569c8cec5.png" alt="Drone 2" style="width: 500px; height: 350px;">
-				<h3>Drone 2</h3>
-				<p>Descripción breve del producto y sus características.</p>
-				<a href="/productos.html" class="boton-secundario">Ver más</a>
-			</div>
-			<div class="card">
-				<img src="/imagenes/aaa-removebg-preview.png" alt="Avión 1" style="width: 500px; height: 350px;">
-				<h3>Avión 1</h3>
-				<p>Descripción breve del producto y sus características.</p>
-				<a href="/productos.html" class="boton-secundario">Ver más</a>
-			</div>
-			<div class="card">
-				<img src="/imagenes/bbbb-removebg-preview.png" alt="Avión 2" style="width: 500px; height: 350px;">
-				<h3>Avión 2</h3>
-				<p>Descripción breve del producto y sus características.</p>
-				<a href="/productos.html" class="boton-secundario">Ver más</a>
-			</div>
+		
+		<div class="social-icons">
+			<ul>
+				<li><a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a></li>
+				<li><a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
+				<li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
 		</div>
 	</section>
 	
@@ -112,7 +87,57 @@
 	  </section>
 	</div>	
 
-		
+	<section class="productos">
+		<div class="container">
+			<h2 id="produc1">Productos</h2>
+			<p>En eansa ofrecemos una amplia variedad de drones para diversas aplicaciones, incluyendo:</p>
+			<div class="card">
+				<img src="/imagenes/580b57fbd9996e24bc43bfb5.png" alt="Drone 1" style="width: 500px; height: 350px;">
+				<h3>Drone 1</h3>
+				<p>Descripción breve del producto y sus características.</p>
+				<a href="/productos.html" class="boton-secundario">Ver más</a>
+			</div>
+			<div class="card">
+				<img src="/imagenes/5cb84c5f7ff3656569c8cec5.png" alt="Drone 2" style="width: 500px; height: 350px;">
+				<h3>Drone 2</h3>
+				<p>Descripción breve del producto y sus características.</p>
+				<a href="/productos.html" class="boton-secundario">Ver más</a>
+			</div>
+			<div class="card">
+				<img src="/imagenes/aaa-removebg-preview.png" alt="Avión 1" style="width: 500px; height: 350px;">
+				<h3>Avión 1</h3>
+				<p>Descripción breve del producto y sus características.</p>
+				<a href="/productos.html" class="boton-secundario">Ver más</a>
+			</div>
+			<div class="card">
+				<img src="/imagenes/bbbb-removebg-preview.png" alt="Avión 2" style="width: 500px; height: 350px;">
+				<h3>Avión 2</h3>
+				<p>Descripción breve del producto y sus características.</p>
+				<a href="/productos.html" class="boton-secundario">Ver más</a>
+			</div>
+		</div>
+	</section>
+
+
+<div class="carousel-container5">
+	<div class="carousel-slide5">
+	  <div class="carousel-item5" style="background-image: url(/imagenes/aaaaaaaaa.jpg);">
+		<div class="carousel-item-desc5">
+		  <h3>Misión</h3>
+		  <p>Promover el desarrollo de la Industria Aeronáutica y Espacial de Venezuela con base a un talento humano altamente competente y comprometido, tecnología e instalaciones adecuadas con los más altos estándares de gestión, calidad y seguridad, que garanticen la satisfacción de nuestros clientes</p>
+		</div>
+	  </div>
+	  <div class="carousel-item5" style="background-image: url(/imagenes/bbbbbb.jpg);">
+		<div class="carousel-item-desc5">
+		  <h3>Visión</h3>
+		  <p>Ser la Empresa aeronáutica Líder de Venezuela en el diseño y perfeccionamiento de productos y servicios basados en la investigación y desarrollo aeronáutico y espacial como apoyo del crecimiento económico del País de manera eficiente y eficaz.</p>
+		</div>
+	</div>
+</div>	
+<button class="carousel-prev5">&lt;</button>
+<button class="carousel-next5">&gt;</button>
+</div>
+
 
 	  <footer id="contact1">
 		<div class="footer-content">
@@ -156,5 +181,35 @@
 		</div>
 	  </footer>
 	  
+
+
+	  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      var carouselContainer = $('.carousel-container5');
+      var carouselSlide = carouselContainer.find('.carousel-slide5');
+      var carouselItems = carouselSlide.find('.carousel-item5');
+      var prevButton = carouselContainer.find('.carousel-prev5');
+      var nextButton = carouselContainer.find('.carousel-next5');
+      var currentIndex = 0;
+
+      function navigateTo(index) {
+        carouselSlide.css('transform', 'translateX(-' + (index * 50) + '%)');
+        currentIndex = index;
+      }
+
+      prevButton.click(function() {
+        if (currentIndex > 0) {
+          navigateTo(currentIndex - 1);
+        }
+      });
+
+      nextButton.click(function() {
+        if (currentIndex < carouselItems.length - 1) {
+          navigateTo(currentIndex + 1);
+        }
+      });
+    });
+  </script>
 </body>
 </html>

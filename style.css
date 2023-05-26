@@ -834,3 +834,122 @@ body {
   height: 10vh; /* Adjust this value to center vertically in the viewport */
   text-align: center;
   }
+
+
+/*parte de los iconos de redes sociales del inicio*/
+  .social-icons {
+    float: right;
+    clear: both;
+  }
+  
+  .social-icons ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .social-icons li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .social-icons li:last-child {
+    margin-right: 0;
+  }
+  
+  .social-icons a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    text-align: center;
+    line-height: 40px;
+    color: #ffffff;
+    transition: color 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    color: #c8612d;
+  }
+
+  /*carrousel de la mision y vision, etc*/
+
+  .carousel-container5 {
+    position:relative;
+    width: 100%;
+    height: 600px;
+    overflow:hidden;
+    text-align: center;
+  }
+  
+  .carousel-slide5 {
+    display: flex;
+    width: 200%;
+    height: 100%;
+    transition: transform 0.4s ease-in-out;
+  }
+  
+  .carousel-item5 {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background-position: center;
+    background-size:cover;
+    padding: 0 10px;
+    box-sizing: border-box;
+    transition: transform 0.4s ease-in-out;
+  }
+  
+  .carousel-item-desc5 {
+    position:relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 200px;
+    background-color: #c8612dcc;
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+  }
+  
+  .carousel-item5:hover {
+    transform: scale(1.05);
+  }
+  
+  .carousel-item5:hover .carousel-item-desc5 {
+    opacity: 1;
+  }
+  
+  .carousel-prev5,
+  .carousel-next5 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .carousel-prev5:hover,
+  .carousel-next5:hover {
+    opacity: 0.8;
+    color: #c8612d;
+  }
+  
+  .carousel-prev5 {
+    left: 10px;
+  }
+  
+  .carousel-next5 {
+    right: 10px;
+  }
+
+  
