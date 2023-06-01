@@ -926,7 +926,7 @@ body {
     padding: 200px;
     background-color: #c8612dcc;
     color: #fff;
-    font-size: 30px;
+    font-size: 20px;
     text-align: center;
     opacity: 0;
     transition: opacity 0.4s ease-in-out;
@@ -971,9 +971,7 @@ body {
   }
 
 
-
-
-
+/* css de las redes sociales a la derecha siguiendo el scrolling*/
  .social-circle25 {
   position:fixed;
   right: 20px;
@@ -1009,4 +1007,20 @@ body {
   50% {
     transform: translateY(-10px);
   }
+}
+
+/*css de la parte de abajo de las empresas y organismos aliados a eansa*/
+.logox {
+  width: 120px; /* Ajusta el ancho de los logos según tus necesidades */
+  height: 120px; /* Ajusta la altura de los logos según tus necesidades */
+  margin-left: 80px; /* Ajusta el margen derecho para crear separación entre los logos */
+  transition: transform 0.3s; /* Agrega una transición suave al cambio de tamaño */
+}
+
+.logox:last-child {
+  margin-right: 0; /* Elimina el margen derecho del último logo para evitar espacio adicional */
+}
+
+.logox:hover {
+  transform: scale(1.1); /* Hace que los logos se agranden un 10% al pasar el mouse por encima */
 }
